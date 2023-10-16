@@ -1,7 +1,8 @@
 // src/App.js
 import React from 'react';
-import './App.css';
-import ImageList from './ImageList';
+import './../App.css';
+
+import ImageList from '../ImageList';
 
 const imageUrls = [
   'https://www.annauniv.edu/Graduation_Day_2023/201/a/218NC_D4/DSC_5366.JPG',
@@ -107,7 +108,7 @@ const imageUrls = [
   // Add other image URLs here
 ];
 
-const ImageGallery = () => {
+const Twoaeight = () => {
   const handleImageClick = (imageUrl) => {
     window.location.href = imageUrl;
   };
@@ -121,4 +122,4 @@ const ImageGallery = () => {
   );
 };
 
-export default ImageGallery;
+export default Twoaeight;

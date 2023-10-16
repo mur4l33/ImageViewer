@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ImageGallery from './ImageGallery';
+import Home from './Home';
+import Onehundread from './img/Onehundread';
+import OneHundreadOne from './img/Onehundreadone';
+import Onehundreadone from './img/Onehundreadone';
+import Twoaeight from './img/Twoaeight';
+import Twob from './img/Twob';
+import Twobmisc from './img/Twobmisc';
+import Twoc from './img/Twoc';
+import Twod from './img/Twod';
+import Twoe from './img/Twoe';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/OneHundread" element={<Onehundread />} />
+          <Route path="/OneHundreadOne" element={<Onehundreadone />} />
+          <Route to='/twoASeven'element={<Twoaeight/>}/>	
+        <Route to='/twoAEight'element={<Twoaeight/>}/>
+        <Route to='/twoB'element={<Twob/>}/>
+        <Route to='/twoBMISC'element={<Twobmisc/>}/>
+        <Route to='/twoC'element={<Twoc/>}/>
+        <Route to='/twoD'element={<Twod/>}/>
+        <Route to='/twoE'element={<Twoe/>}/>
+
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

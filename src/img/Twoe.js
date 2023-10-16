@@ -1,7 +1,8 @@
 // src/App.js
 import React from 'react';
-import './App.css';
-import ImageList from './ImageList';
+import './../App.css';
+
+import ImageList from '../ImageList';
 
 const imageUrls = [
   'https://www.annauniv.edu/Graduation_Day_2023/201/a/218NC_D4/DSC_5366.JPG',
@@ -107,18 +108,17 @@ const imageUrls = [
   // Add other image URLs here
 ];
 
-const ImageGallery = () => {
+const Twoe = () => {
   const handleImageClick = (imageUrl) => {
     window.location.href = imageUrl;
   };
 
   return (
     <div className="App">
-      <h1>Image Gallery - </h1>
       
       <ImageList imageUrls={imageUrls} onImageClick={handleImageClick} />
     </div>
   );
 };
 
-export default ImageGallery;
+export default Twoe;
